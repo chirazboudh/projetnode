@@ -9,7 +9,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 // For the database
 var sqlite3 = require('sqlite3'); //.verbose();
-var db = new sqlite3.Database('./db/projet.db');
+var db = new sqlite3.Database('./projet.db');
 
 // Add restful controller
 require('./wifiController')(app, db, jsonParser);
